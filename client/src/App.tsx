@@ -92,18 +92,29 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                     onChange={(e) => setText(e.target.value)}
                                     placeholder="Enter comment..."
                                     style={{
+                                        display: 'block',
                                         width: '100%',
-                                        padding: 8,
-                                        marginBottom: 8,
-                                        boxSizing: 'border-box'
+                                        height: 40,
+                                        padding: '0 12px',
+                                        marginBottom: 10,
+                                        boxSizing: 'border-box',
+                                        border: '1px solid #999',
+                                        outline: 'none',
+                                        backgroundColor: 'white',
+                                        fontSize: 14,
+                                        appearance: 'none'
                                     }}
                                 />
 
                                 <button
                                     style={{
+                                        display: 'block',
                                         width: '100%',
-                                        padding: 8,
-                                        boxSizing: 'border-box'
+                                        height: 40,
+                                        padding: 0,
+                                        boxSizing: 'border-box',
+                                        border: '1px solid #999',
+                                        fontSize: 14
                                     }}
                                     onClick={handleAddComment}
                                 >
