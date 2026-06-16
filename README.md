@@ -2,6 +2,22 @@
 
 A full-stack design review application built as part of the CADchat interview exercise.
 
+## Live Deployment
+
+### Frontend
+
+https://cadchat-review-client.onrender.com
+
+### Backend API
+
+https://cadchat-review.onrender.com
+
+Example API request:
+
+```http
+GET https://cadchat-review.onrender.com/api/reviews/cube-1
+```
+
 ## Overview
 
 This application allows users to review a 3D model, create comments, approve or reject reviews, and persist review decisions using a backend API and database.
@@ -15,7 +31,9 @@ This application allows users to review a 3D model, create comments, approve or 
 * Reject reviews
 * Delete reviews and reset state
 * REST API built with Express
+* Supabase database persistence
 * TypeScript throughout frontend and backend
+* Fully deployed frontend and backend on Render
 
 ## Tech Stack
 
@@ -36,6 +54,11 @@ This application allows users to review a 3D model, create comments, approve or 
 ### Database
 
 * Supabase
+
+### Hosting
+
+* Render (Frontend)
+* Render (Backend)
 
 ## Project Structure
 
@@ -74,10 +97,6 @@ Backend runs on:
 ```text
 http://localhost:3001
 ```
-
-## Notes
-
-This repository was created as part of the CADchat interview exercise. The configuration required to run the application locally is included for reviewer convenience.
 
 ## API Endpoints
 
@@ -129,6 +148,21 @@ or
 ```http
 DELETE /api/reviews/:id
 ```
+
+## Notes
+
+This repository was created as part of the CADchat interview exercise.
+
+The application is deployed publicly using Render for both the frontend and backend, with Supabase used for data persistence.
+
+If given additional time, potential enhancements would include:
+
+* Multiple reviewable objects
+* Review history and audit trail
+* User authentication
+* Improved UI styling and design review workflows
+* Loading and error states
+* Automated test coverage
 
 ## Author
 
