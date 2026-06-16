@@ -68,7 +68,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
             </mesh>
 
             {isPanelOpen && (
-                <Html position={[0, 1.8, 0]} center>
+                <Html position={[0, 2.2, 0]}>
                     <div
                         onPointerDown={(event) => event.stopPropagation()}
                         onClick={(event) => event.stopPropagation()}
@@ -79,7 +79,8 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                             border: '1px solid #ccc',
                             borderRadius: 8,
                             boxShadow: '0 4px 12px rgba(0,0,0,.2)',
-                            fontFamily: 'Arial, sans-serif'
+                            fontFamily: 'Arial, sans-serif',
+                            transform: 'translate(-50%, -50%)'
                         }}
                     >
                         <h3 style={{ marginTop: 0 }}>Design Review</h3>
@@ -91,7 +92,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                     onChange={(e) => setText(e.target.value)}
                                     placeholder="Enter comment..."
                                     style={{
-                                        width: 'calc(100% - 8px)',
+                                        width: '100%',
                                         padding: 8,
                                         marginBottom: 8,
                                         boxSizing: 'border-box'
@@ -100,7 +101,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
 
                                 <button
                                     style={{
-                                        width: 'calc(100% - 8px)',
+                                        width: '100%',
                                         padding: 8,
                                         boxSizing: 'border-box'
                                     }}
