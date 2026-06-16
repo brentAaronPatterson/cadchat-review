@@ -74,7 +74,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                         onClick={(event) => event.stopPropagation()}
                         style={{
                             width: 300,
-                            padding: 24,
+                            padding: 40,
                             backgroundColor: 'white',
                             border: '1px solid #ccc',
                             borderRadius: 8,
