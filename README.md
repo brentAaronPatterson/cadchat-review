@@ -8,40 +8,41 @@ This application allows users to review a 3D model, create comments, approve or 
 
 ### Features
 
-- Interactive 3D cube using React Three Fiber
-- Create review comments
-- Persist reviews to the database
-- Approve reviews
-- Reject reviews
-- Delete reviews and reset state
-- REST API built with Express
-- TypeScript throughout frontend and backend
+* Interactive 3D cube using React Three Fiber
+* Create review comments
+* Persist reviews to the database
+* Approve reviews
+* Reject reviews
+* Delete reviews and reset state
+* REST API built with Express
+* TypeScript throughout frontend and backend
 
 ## Tech Stack
 
 ### Frontend
 
-- React
-- TypeScript
-- Vite
-- React Three Fiber
-- Drei
+* React
+* TypeScript
+* Vite
+* React Three Fiber
+* Drei
 
 ### Backend
 
-- Node.js
-- Express
-- TypeScript
+* Node.js
+* Express
+* TypeScript
 
 ### Database
 
-- Supabase
+* Supabase
 
 ## Project Structure
 
 ```text
 client/
     src/
+
 server/
     src/
 ```
@@ -74,14 +75,9 @@ Backend runs on:
 http://localhost:3001
 ```
 
-## Environment Variables
+## Notes
 
-Create a `.env` file in the server project:
-
-```env
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-```
+This repository was created as part of the CADchat interview exercise. The configuration required to run the application locally is included for reviewer convenience.
 
 ## API Endpoints
 
