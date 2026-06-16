@@ -73,8 +73,8 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                         onPointerDown={(event) => event.stopPropagation()}
                         onClick={(event) => event.stopPropagation()}
                         style={{
-                            width: 260,
-                            padding: 16,
+                            width: 300,
+                            padding: 24,
                             backgroundColor: 'white',
                             border: '1px solid #ccc',
                             borderRadius: 8,
@@ -91,7 +91,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                     onChange={(e) => setText(e.target.value)}
                                     placeholder="Enter comment..."
                                     style={{
-                                        width: '100%',
+                                        width: 'calc(100% - 8px)',
                                         padding: 8,
                                         marginBottom: 8,
                                         boxSizing: 'border-box'
@@ -99,7 +99,11 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                 />
 
                                 <button
-                                    style={{ width: '100%', padding: 8, boxSizing: 'border-box' }}
+                                    style={{
+                                        width: 'calc(100% - 8px)',
+                                        padding: 8,
+                                        boxSizing: 'border-box'
+                                    }}
                                     onClick={handleAddComment}
                                 >
                                     Add Comment
@@ -134,7 +138,8 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                         style={{
                                             marginTop: 12,
                                             width: '100%',
-                                            padding: 8
+                                            padding: 8,
+                                            boxSizing: 'border-box'
                                         }}
                                         onClick={handleErasePersistedDecisionAndReset}
                                     >
