@@ -73,7 +73,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                         onPointerDown={(event) => event.stopPropagation()}
                         onClick={(event) => event.stopPropagation()}
                         style={{
-                            width: 300,
+                            width: 260,
                             padding: 16,
                             backgroundColor: 'white',
                             border: '1px solid #ccc',
@@ -99,7 +99,7 @@ function Cube({ isPanelOpen, setIsPanelOpen }: CubeProps) {
                                 />
 
                                 <button
-                                    style={{ width: '100%', padding: 8 }}
+                                    style={{ width: '100%', padding: 8, boxSizing: 'border-box' }}
                                     onClick={handleAddComment}
                                 >
                                     Add Comment
